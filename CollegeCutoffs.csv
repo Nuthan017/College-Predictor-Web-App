@@ -1,0 +1,101 @@
+id,college_name,program,exam,category,quota,closing_rank
+1,NIT Trichy,Computer Science and Engg,JEE Main,General,AI,850
+2,NIT Trichy,Computer Science and Engg,JEE Main,EWS,AI,2200
+3,NIT Trichy,Computer Science and Engg,JEE Main,OBC-NCL,AI,3100
+4,NIT Trichy,Electronics and Comm. Engg,JEE Main,General,AI,2100
+5,NIT Trichy,Electrical Engineering,JEE Main,General,AI,4500
+6,NIT Trichy,Mechanical Engineering,JEE Main,SC,AI,15000
+7,NIT Warangal,Computer Science and Engg,JEE Main,General,AI,1400
+8,NIT Warangal,Computer Science and Engg,JEE Main,OBC-NCL,AI,4200
+9,NIT Warangal,Electrical Engineering,JEE Main,General,AI,5800
+10,NIT Warangal,Mechanical Engineering,JEE Main,ST,AI,25000
+11,NIT Surathkal,Computer Science and Engg,JEE Main,General,AI,2050
+12,NIT Surathkal,Computer Science and Engg,JEE Main,EWS,AI,3500
+13,NIT Surathkal,Civil Engineering,JEE Main,General,AI,15500
+14,NIT Surathkal,Civil Engineering,JEE Main,OBC-NCL,AI,25000
+15,MNNIT Allahabad,Computer Science and Engg,JEE Main,General,AI,4000
+16,MNNIT Allahabad,IT,JEE Main,General,AI,5500
+17,MNNIT Allahabad,IT,JEE Main,SC,AI,18500
+18,MNNIT Allahabad,Chemical Engineering,JEE Main,General,AI,18000
+19,NIT Rourkela,Electronics and Comm. Engg,JEE Main,General,AI,6200
+20,NIT Rourkela,Electronics and Comm. Engg,JEE Main,EWS,AI,9000
+21,NIT Rourkela,Metallurgy and Materials Engg,JEE Main,General,AI,35000
+22,NIT Rourkela,Civil Engineering,JEE Main,ST,AI,55000
+23,IIIT Hyderabad,CSE,JEE Main,General,AI,500
+24,IIIT Hyderabad,ECE,JEE Main,General,AI,1200
+25,IIIT Delhi,CSE,JEE Main,General,AI,2500
+26,IIIT Delhi,ECE,JEE Main,OBC-NCL,AI,7000
+27,IIIT Lucknow,IT,JEE Main,General,AI,8000
+28,IIIT Lucknow,IT,JEE Main,EWS,AI,12000
+29,IIIT Pune,CSE,JEE Main,General,AI,10500
+30,IIIT Pune,ECE,JEE Main,SC,AI,45000
+31,NIT Jaipur,Mechanical Engineering,JEE Main,General,HS,15000
+32,NIT Jaipur,Mechanical Engineering,JEE Main,General,OS,18000
+33,NIT Jaipur,Architecture,JEE Main,OBC-NCL,OS,32000
+34,NIT Calicut,Production Engineering,JEE Main,General,HS,25000
+35,NIT Calicut,Production Engineering,JEE Main,General,OS,35000
+36,"BIT Mesra, Ranchi (GFTI)",CSE,JEE Main,General,AI,18000
+37,"BIT Mesra, Ranchi (GFTI)",ECE,JEE Main,General,AI,28000
+38,IIEST Shibpur (GFTI),Mining Engineering,JEE Main,General,AI,45000
+39,IIEST Shibpur (GFTI),Mining Engineering,JEE Main,ST,AI,95000
+40,NIT Silchar,CSE,JEE Main,General,HS,38000
+41,NIT Silchar,CSE,JEE Main,General,OS,22000
+42,NIT Silchar,CSE,JEE Main,OBC-NCL,OS,25000
+43,NIT Agartala,ECE,JEE Main,General,AI,50000
+44,NIT Agartala,ECE,JEE Main,EWS,AI,85000
+45,NIT Patna,CSE,JEE Main,General,AI,16000
+46,NIT Patna,Civil Engineering,JEE Main,OBC-NCL,AI,35000
+47,NIT Raipur,Mechanical Engineering,JEE Main,General,AI,28000
+48,NIT Raipur,Mechanical Engineering,JEE Main,SC,AI,70000
+49,NIT Jalandhar,IT,JEE Main,General,AI,15000
+50,NIT Jalandhar,IT,JEE Main,OBC-NCL,AI,25000
+51,NIT Jalandhar,Bio Technology,JEE Main,ST,AI,125000
+52,NIT Durgapur,Electrical Engineering,JEE Main,General,AI,20000
+53,NIT Durgapur,Electrical Engineering,JEE Main,EWS,AI,35000
+54,NIT Durgapur,Chemical Engineering,JEE Main,General,AI,42000
+55,NIT Kurukshetra,CSE,JEE Main,General,HS,7500
+56,NIT Kurukshetra,CSE,JEE Main,General,OS,9000
+57,NIT Kurukshetra,IT,JEE Main,OBC-NCL,OS,15000
+58,NIT Goa,CSE,JEE Main,General,AI,15000
+59,NIT Goa,ECE,JEE Main,ST,AI,65000
+60,NIT Nagaland,CSE,JEE Main,General,AI,38000
+61,NIT Nagaland,Mechanical Engineering,JEE Main,OBC-NCL,AI,55000
+62,NIT Meghalaya,ECE,JEE Main,General,AI,45000
+63,NIT Puducherry,Electrical Engineering,JEE Main,General,AI,30000
+64,NIT Puducherry,Electrical Engineering,JEE Main,SC,AI,80000
+65,MNIT Bhopal,CSE,JEE Main,General,AI,10000
+66,MNIT Bhopal,Civil Engineering,JEE Main,EWS,AI,25000
+67,MNIT Bhopal,Chemical Engineering,JEE Main,SC,AI,65000
+68,IIIT Guwahati,CSE,JEE Main,General,AI,19000
+69,IIIT Guwahati,ECE,JEE Main,OBC-NCL,AI,32000
+70,IIIT Jabalpur,Design,JEE Main,General,AI,25000
+71,IIIT Jabalpur,ECE,JEE Main,ST,AI,80000
+72,Assam University (GFTI),CSE,JEE Main,General,AI,35000
+73,Assam University (GFTI),ECE,JEE Main,OBC-NCL,AI,45000
+74,JNU Delhi (GFTI),ECE,JEE Main,General,AI,9000
+75,JNU Delhi (GFTI),ECE,JEE Main,EWS,AI,12000
+76,JNU Delhi (GFTI),CSE,JEE Main,General,AI,7500
+77,JNU Delhi (GFTI),CSE,JEE Main,OBC-NCL,AI,11000
+78,Central Univ. of Rajasthan (GFTI),ECE,JEE Main,General,AI,45000
+79,Central Univ. of Rajasthan (GFTI),ECE,JEE Main,ST,AI,90000
+80,Central Univ. of Rajasthan (GFTI),Architecture,JEE Main,General,AI,110000
+81,IIIT Kota,CSE,JEE Main,General,AI,14500
+82,IIIT Kota,ECE,JEE Main,OBC-NCL,AI,25500
+83,IIIT Bhopal,CSE,JEE Main,General,AI,16500
+84,IIIT Bhopal,ECE,JEE Main,EWS,AI,27500
+85,IIIT Bhagalpur,CSE,JEE Main,General,AI,26000
+86,IIIT Bhagalpur,ECE,JEE Main,SC,AI,75000
+87,NIT Calicut,CSE,JEE Main,General,OS,6500
+88,NIT Calicut,CSE,JEE Main,EWS,OS,8500
+89,NIT Calicut,ECE,JEE Main,OBC-NCL,OS,13000
+90,NIT Warangal,Civil Engineering,JEE Main,General,HS,25000
+91,NIT Warangal,Civil Engineering,JEE Main,ST,HS,95000
+92,NIT Trichy,Civil Engineering,JEE Main,General,OS,28000
+93,NIT Trichy,Civil Engineering,JEE Main,OBC-NCL,OS,40000
+94,MNNIT Allahabad,Civil Engineering,JEE Main,General,OS,22000
+95,MNNIT Allahabad,Civil Engineering,JEE Main,SC,OS,55000
+96,MNIT Bhopal,Mechanical Engineering,JEE Main,General,HS,22000
+97,MNIT Bhopal,Mechanical Engineering,JEE Main,OBC-NCL,HS,38000
+98,NIT Jaipur,ECE,JEE Main,General,OS,12000
+99,NIT Jaipur,ECE,JEE Main,EWS,OS,15000
+100,NIT Jaipur,ECE,JEE Main,SC,OS,40000

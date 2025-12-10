@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>College Predictor</title>
+    <style>
+        /* Minimal CSS for readability */
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .container { max-width: 800px; margin: auto; padding: 20px; border: 1px solid #ccc; }
+        input, select, button { padding: 10px; margin-bottom: 10px; width: 100%; box-sizing: border-box; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>College Predictor App</h2>
+        <form id="predictionForm">
+            <label for="rank">Your Rank:</label>
+            <input type="number" id="rank" name="rank" required min="1">
+
+            <label for="exam">Entrance Exam:</label>
+            <select id="exam" name="exam" required>
+                {% for exam in exams %}
+                    <option value="{{ exam }}">{{ exam }}</option>
+                {% endfor %}
+            </select>
+            
+            <label for="category">Category:</label>
+            <select id="category" name="category" required>
+                {% for category in categories %}
+                    <option value="{{ category }}">{{ category }}</option>
+                {% endfor %}
+            </select>
+            
+            <button type="submit">Predict Colleges</button>
+        </form>
+
+        <hr>
+
+        <h3>Eligible Colleges (<span id="resultCount">0</span>)</h3>
+        <p id="message"></p>
+        <table id="resultsTable">
+            <thead>
+                <tr><th>College Name</th><th>Program</th><th>Quota</th><th>Closing Rank</th></tr>
+            </thead>
+            <tbody>
+                </tbody>
+        </table>
+    </div>
+
+    <script>
+        document.getElementById('predictionForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Stop the default form submission
+
+            const form = event.target;
+            const data = {
+                rank: document.getElementById('rank').value,
+                exam: document.getElementById('exam').value,
+                category: document.getElementById('category').value
+            };
+
+            // Clear previous results and messages
+            const tbody = document.querySelector('#resultsTable tbody');
+            tbody.innerHTML = '';
+            document.getElementById('message').textContent = 'Predicting...';
+            document.getElementById('resultCount').textContent = '0';
+
+
+            // Send data to Flask backend via AJAX (fetch API)
+            fetch('/predict', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    document.getElementById('message').textContent = '';
+                    const results = data.results;
+                    document.getElementById('resultCount').textContent = results.length;
+                    
+                    if (results.length === 0) {
+                        tbody.innerHTML = '<tr><td colspan="4">No colleges found based on your criteria.</td></tr>';
+                    } else {
+                        // Dynamically populate the results table
+                        results.forEach(college => {
+                            const row = tbody.insertRow();
+                            row.insertCell().textContent = college.college;
+                            row.insertCell().textContent = college.program;
+                            row.insertCell().textContent = college.quota;
+                            row.insertCell().textContent = college.closing_rank.toLocaleString(); // Format rank with commas
+                        });
+                    }
+                } else {
+                    document.getElementById('message').textContent = 'Error: ' + data.message;
+                    document.getElementById('resultCount').textContent = '0';
+                }
+            })
+            .catch(error => {
+                console.error('Fetch error:', error);
+                document.getElementById('message').textContent = 'A network error occurred.';
+            });
+        });
+    </script>
+</body>
+</html>
